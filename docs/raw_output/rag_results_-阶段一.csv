@@ -1,0 +1,291 @@
+Query 序号,Query 简写,retrieval_top1_hit,retrieval_top3_hit,answer_correct,answer_grounded,answer_complete,hallucination,备注（关键问题点）
+1,OpenGauss role in RetrievalQA,1,1,1,2,1,0,答案截断，只提 storing，未覆盖完整定义
+2,Why divide long documents,1,1,1,2,1,0,答案极简“To be embedded directly”，缺失原因解释
+3,Two embedding sources,0,0,0,0,0,1,答案完全无关（说 document chunking...），有幻觉
+4,BentoML role,1,1,1,2,1,0,答案完整但偏短，未提 package logic 全貌
+5,Why RK3568 resource-constrained,1,1,0,1,0,0,答案错位，回答了 experiments 而非原因
+6,Tasks on stronger machine,0,1,0,1,0,0,答案反向（说 edge 做什么），严重错位
+7,Differences HF vs Cohere,0,1,2,2,2,0,检索 top-1 miss，但 top-3 覆盖核心，生成完美
+8,Why separate retrieval & generation eval,1,1,0,1,0,0,答案“A practical RetrievalQA system”太泛，无 why
+9,Dimensions for best-practice,0,0,0,0,0,0,答案“top-1 hit rate...”完全无关
+10,Recommended minimal for RK3568,0,0,0,0,0,0,答案“stable”无意义
+11,Metadata fields recommended,0,0,0,0,0,0,答案“structure of the source document...”完全错位
+12,Why similarity operator in best-practice,1,1,0,1,0,0,答案“fixed too early”只截取后半句，无前因
+13,Deployment adv/disadv HF vs Cohere,0,1,2,2,2,0,top-1 miss，但 top-3 覆盖，生成完美
+14,Why large-scale on stronger machine,0,0,0,0,0,0,答案“reduces local computation pressure”只截取后半句
+15,Four main deliverables,0,0,0,0,0,0,答案“[iii]”无意义
+16,Why include chunk/overlap in metadata,0,1,0,1,0,0,答案错位，回答了 experiments 而非 why
+17,Why BentoML as service layer not embedding,1,1,0,1,0,0,答案“both stages should be evaluated independently”无关
+18,Benefits of storing text + vectors in OpenGauss,0,1,1,2,1,0,答案部分对，但不完整
+
+
+
+
+================= Retrival Logs =================
+Config: mark_200_50
+Query: What role does OpenGauss play in a RetrievalQA pipeline?
+Operator: <->
+Retrieval Time: 9.7491 seconds
+== Rand 1: Distance/Score = 9.21397436551668 | Text = In a RetrievalQA pipeline, the database is not only responsible for storing original text chunks, but also for storing the embedding vectors that represent the semantic meaning of those chunks. 
+== Rand 2: Distance/Score = 9.59165668326841 | Text = OpenGauss is an enterprise-grade relational database that can also be used as a vector store for retrieval-augmented generation systems. 
+== Rand 3: Distance/Score = 9.60648179578121 | Text = This architecture makes it possible to build a complete retrieval and question answering workflow on top of a database system instead of relying only on an in-memory vector engine. 
+== Rand 4: Distance/Score = 9.71898354007486 | Text = Typical indicators include top-1 hit rate, top-3 hit rate, mean reciprocal rank, and average retrieval latency. 
+== Rand 5: Distance/Score = 9.75900830530579 | Text = A typical RetrievalQA workflow contains several stages. The first stage is raw document preparation. 
+Generate_Time: 20.497918367385864 seconds
+Answer [1]: storing original text chunks, but also for storing the embedding vectors that represent the semantic meaning of those chunks
+============================================
+-- Connection to OpenGauss established sucessfully --
+-- Generate query embedding with shape: torch.Size([768]) --
+================= Retrival Logs =================
+Config: mark_200_50
+Query: Why must long source documents be divided into smaller chunks?
+Operator: <->
+Retrieval Time: 0.3722 seconds
+== Rand 1: Distance/Score = 8.80395353113136 | Text = These documents are often too long to be embedded directly, so they must be divided into smaller chunks. Chunking strategy has a direct influence on retrieval quality. 
+== Rand 2: Distance/Score = 9.34626904471257 | Text = If chunks are too short, important context may be lost. If chunks are too long, retrieval may become noisy because a returned chunk can contain both relevant and irrelevant content. 
+== Rand 3: Distance/Score = 9.34971729197955 | Text = For example, a certain chunk size may work best for technical manuals, while a different overlap may help with fragmented deployment notes. 
+== Rand 4: Distance/Score = 9.39881131387206 | Text = The first dimension is chunking strategy. Fixed-length chunking is simple and easy to reproduce, but sentence-based or punctuation-based chunking may better preserve semantic boundaries. 
+== Rand 5: Distance/Score = 9.41283381504675 | Text = The most relevant chunks are then returned as retrieval context for answer generation. 
+Generate_Time: 0.5991768836975098 seconds
+Answer [2]: To be embedded directly
+============================================
+-- Connection to OpenGauss established sucessfully --
+-- Generate query embedding with shape: torch.Size([768]) --
+================= Retrival Logs =================
+Config: mark_200_50
+Query: What are the two embedding sources mentioned in this project?
+Operator: <->
+Retrieval Time: 0.3780 seconds
+== Rand 1: Distance/Score = 9.23544651275936 | Text = It also makes it easier to run controlled experiments because the retrieval result can be linked back to the exact preprocessing configuration used when the chunk was inserted into the database. 
+== Rand 2: Distance/Score = 9.290532155476 | Text = This architecture makes it possible to build a complete retrieval and question answering workflow on top of a database system instead of relying only on an in-memory vector engine. 
+== Rand 3: Distance/Score = 9.39706428623892 | Text = The best configuration depends on the structure of the source document and the nature of the user queries. After chunking, the next stage is embedding generation. 
+== Rand 4: Distance/Score = 9.4199585238635 | Text = An engineer maintaining this system should also be aware of operational details. Repeated reruns may create duplicate database records if the insertion pipeline is not idempotent. 
+== Rand 5: Distance/Score = 9.46277432365322 | Text = The second is Python example code that demonstrates document chunking, embedding insertion, vector retrieval, and end-to-end question answering. 
+Generate_Time: 1.2081382274627686 seconds
+Answer [3]: document chunking, embedding insertion, vector retrieval, and end-to-end question answering
+============================================
+-- Connection to OpenGauss established sucessfully --
+-- Generate query embedding with shape: torch.Size([768]) --
+================= Retrival Logs =================
+Config: mark_200_50
+Query: What does BentoML do in this project?
+Operator: <->
+Retrieval Time: 0.3641 seconds
+== Rand 1: Distance/Score = 8.98772525849926 | Text = BentoML turns the pipeline into a reusable service. 
+== Rand 2: Distance/Score = 9.34116126084824 | Text = Therefore, both stages should be evaluated independently. BentoML can be used to package the retrieval and question answering logic as a deployable service. 
+== Rand 3: Distance/Score = 9.62066592443527 | Text = In the context of this project, BentoML serves as the application service layer rather than as an embedding model itself. 
+== Rand 4: Distance/Score = 9.62771370023797 | Text = Instead, the report should identify which configurations are recommended under which conditions. 
+== Rand 5: Distance/Score = 9.82214581137155 | Text = Finally, the RK3568 deployment target introduces real-world constraints that force the system toward a minimal, stable, and well-justified implementation. 
+Generate_Time: 0.7074761390686035 seconds
+Answer [4]: turns the pipeline into a reusable service
+============================================
+-- Connection to OpenGauss established sucessfully --
+-- Generate query embedding with shape: torch.Size([768]) --
+================= Retrival Logs =================
+Config: mark_200_50
+Query: Why is RK3568 considered a resource-constrained edge device?
+Operator: <->
+Retrieval Time: 0.3840 seconds
+== Rand 1: Distance/Score = 8.52580115169949 | Text = Finally, the RK3568 deployment target introduces real-world constraints that force the system toward a minimal, stable, and well-justified implementation. 
+== Rand 2: Distance/Score = 8.62721555698022 | Text = The RK3568 platform is a typical resource-constrained edge device. 
+== Rand 3: Distance/Score = 9.11702013556753 | Text = It also makes it easier to run controlled experiments because the retrieval result can be linked back to the exact preprocessing configuration used when the chunk was inserted into the database. 
+== Rand 4: Distance/Score = 9.16811021940275 | Text = It also matches realistic edge deployment patterns where the edge node provides fast local search while heavy model computation remains centralized. 
+== Rand 5: Distance/Score = 9.20180264932205 | Text = Typical indicators include top-1 hit rate, top-3 hit rate, mean reciprocal rank, and average retrieval latency. 
+Generate_Time: 1.4945969581604004 seconds
+Answer [5]: It also makes it easier to run controlled experiments because the retrieval result can be linked back to the exact preprocessing configuration used when the chunk was inserted into the database
+============================================
+-- Connection to OpenGauss established sucessfully --
+-- Generate query embedding with shape: torch.Size([768]) --
+================= Retrival Logs =================
+Config: mark_200_50
+Query: What tasks should be completed on a stronger machine instead of the edge device?
+Operator: <->
+Retrieval Time: 0.3581 seconds
+== Rand 1: Distance/Score = 8.93218708180998 | Text = Instead, the report should identify which configurations are recommended under which conditions. 
+== Rand 2: Distance/Score = 8.93656649749557 | Text = Finally, the RK3568 deployment target introduces real-world constraints that force the system toward a minimal, stable, and well-justified implementation. 
+== Rand 3: Distance/Score = 8.94172323255846 | Text = It also makes it easier to run controlled experiments because the retrieval result can be linked back to the exact preprocessing configuration used when the chunk was inserted into the database. 
+== Rand 4: Distance/Score = 9.09678447210516 | Text = The edge device then focuses on online query handling, vector retrieval, and lightweight response assembly. This division of labor reduces memory pressure and improves stability. 
+== Rand 5: Distance/Score = 9.10979794392288 | Text = This reduces local computation pressure and can simplify deployment on lightweight edge devices, but it requires network access and external service credentials. 
+Generate_Time: 0.8164904117584229 seconds
+Answer [6]: online query handling, vector retrieval, and lightweight response assembly
+============================================
+-- Connection to OpenGauss established sucessfully --
+-- Generate query embedding with shape: torch.Size([768]) --
+================= Retrival Logs =================
+Config: mark_200_50
+Query: What are the main differences between HuggingFace embeddings and Cohere embeddings?
+Operator: <->
+Retrieval Time: 0.4549 seconds
+== Rand 1: Distance/Score = 8.13495671481743 | Text = Therefore, choosing between HuggingFace and Cohere is not only a question of retrieval accuracy, but also a question of deployment constraints, response latency, operating cost, and system 
+== Rand 2: Distance/Score = 8.22047922487025 | Text = Some should ask for comparisons, such as the difference between HuggingFace embeddings and Cohere embeddings. 
+== Rand 3: Distance/Score = 8.84553213326949 | Text = HuggingFace models are suitable when local execution and offline control are important. 
+== Rand 4: Distance/Score = 8.96432630587285 | Text = The second dimension is embedding backend. HuggingFace local embeddings provide more deployment autonomy, while Cohere embeddings may provide higher convenience or better hosted performance. 
+== Rand 5: Distance/Score = 9.37935689775315 | Text = A local HuggingFace embedding model may be suitable for offline experimentation, while Cohere may be more practical for remote or hybrid deployments. 
+Generate_Time: 1.3645198345184326 seconds
+Answer [7]: HuggingFace local embeddings provide more deployment autonomy, while Cohere embeddings may provide higher convenience or better hosted performance
+============================================
+-- Connection to OpenGauss established sucessfully --
+-- Generate query embedding with shape: torch.Size([768]) --
+================= Retrival Logs =================
+Config: mark_200_50
+Query: Why should retrieval evaluation be separated from generation evaluation?
+Operator: <->
+Retrieval Time: 0.4302 seconds
+== Rand 1: Distance/Score = 8.69347763238202 | Text = A practical RetrievalQA system should separate retrieval evaluation from generation evaluation. Retrieval evaluation asks whether the database returns the correct or at least useful chunks. 
+== Rand 2: Distance/Score = 8.78996566540085 | Text = Typical indicators include top-1 hit rate, top-3 hit rate, mean reciprocal rank, and average retrieval latency. 
+== Rand 3: Distance/Score = 8.97418579828764 | Text = Generation evaluation asks whether the final answer is correct, grounded, and sufficiently complete. 
+== Rand 4: Distance/Score = 9.08229376300715 | Text = Retrieval experiments should compare not only whether the system returns the correct chunk, but also whether the returned ranking is stable across different query types. 
+== Rand 5: Distance/Score = 9.17719422589842 | Text = It also makes it easier to run controlled experiments because the retrieval result can be linked back to the exact preprocessing configuration used when the chunk was inserted into the database. 
+Generate_Time: 0.5244274139404297 seconds
+Answer [8]: A practical RetrievalQA system
+============================================
+-- Connection to OpenGauss established sucessfully --
+-- Generate query embedding with shape: torch.Size([768]) --
+================= Retrival Logs =================
+Config: mark_200_50
+Query: What dimensions should be tested systematically for best-practice exploration?
+Operator: <->
+Retrieval Time: 0.3711 seconds
+== Rand 1: Distance/Score = 8.21010398808183 | Text = These dimensions together form the basis of a best-practice report rather than isolated coding experiments. A good test knowledge base should support multiple question types. 
+== Rand 2: Distance/Score = 8.4087835982122 | Text = This combination of system design, experimentation, and deployment reasoning is exactly what makes best-practice exploration meaningful. 
+== Rand 3: Distance/Score = 8.65006627404728 | Text = Instead, the report should identify which configurations are recommended under which conditions. 
+== Rand 4: Distance/Score = 8.82334978706181 | Text = Typical indicators include top-1 hit rate, top-3 hit rate, mean reciprocal rank, and average retrieval latency. 
+== Rand 5: Distance/Score = 9.05495965267231 | Text = For this reason, similarity operator selection should be part of the best-practice exploration rather than being fixed too early. 
+Generate_Time: 0.9917683601379395 seconds
+Answer [9]: top-1 hit rate, top-3 hit rate, mean reciprocal rank, and average retrieval latency
+============================================
+-- Connection to OpenGauss established sucessfully --
+-- Generate query embedding with shape: torch.Size([768]) --
+================= Retrival Logs =================
+Config: mark_200_50
+Query: What is the recommended minimal solution for RK3568 according to the text?
+Operator: <->
+Retrieval Time: 0.3689 seconds
+== Rand 1: Distance/Score = 8.83118638152731 | Text = Instead, the report should identify which configurations are recommended under which conditions. 
+== Rand 2: Distance/Score = 8.85329738762847 | Text = Finally, the RK3568 deployment target introduces real-world constraints that force the system toward a minimal, stable, and well-justified implementation. 
+== Rand 3: Distance/Score = 9.62020001304628 | Text = Typical indicators include top-1 hit rate, top-3 hit rate, mean reciprocal rank, and average retrieval latency. 
+== Rand 4: Distance/Score = 9.78121528984956 | Text = The third is a best-practice report that summarizes experiments, explains trade-offs, and recommends configurations for both standard Linux servers and AArch64 edge devices. 
+== Rand 5: Distance/Score = 9.9341213792728 | Text = It also makes it easier to run controlled experiments because the retrieval result can be linked back to the exact preprocessing configuration used when the chunk was inserted into the database. 
+Generate_Time: 0.2719442844390869 seconds
+Answer [10]: stable
+============================================
+-- Connection to OpenGauss established sucessfully --
+-- Generate query embedding with shape: torch.Size([768]) --
+================= Retrival Logs =================
+Config: mark_200_50
+Query: What metadata fields are recommended for the OpenGauss embedding table?
+Operator: <->
+Retrieval Time: 0.3632 seconds
+== Rand 1: Distance/Score = 8.26334434731157 | Text = OpenGauss is an enterprise-grade relational database that can also be used as a vector store for retrieval-augmented generation systems. 
+== Rand 2: Distance/Score = 8.8337889739748 | Text = The best configuration depends on the structure of the source document and the nature of the user queries. After chunking, the next stage is embedding generation. 
+== Rand 3: Distance/Score = 8.86957050853418 | Text = It also makes it easier to run controlled experiments because the retrieval result can be linked back to the exact preprocessing configuration used when the chunk was inserted into the database. 
+== Rand 4: Distance/Score = 9.00690449673367 | Text = On RK3568, the recommended minimal solution may be to deploy OpenGauss and a lightweight service endpoint locally, while performing large-scale embedding generation on a separate machine. 
+== Rand 5: Distance/Score = 9.06498694661416 | Text = However, model size, inference latency, and memory usage can become critical on resource-constrained devices. Cohere embeddings, in contrast, are generated by calling a remote API. 
+Generate_Time: 0.8870420455932617 seconds
+Answer [11]: the structure of the source document and the nature of the user queries
+============================================
+-- Connection to OpenGauss established sucessfully --
+-- Generate query embedding with shape: torch.Size([768]) --
+================= Retrival Logs =================
+Config: mark_200_50
+Query: Why should similarity operator selection be included in best-practice exploration?
+Operator: <->
+Retrieval Time: 0.9735 seconds
+== Rand 1: Distance/Score = 7.50429716983433 | Text = For this reason, similarity operator selection should be part of the best-practice exploration rather than being fixed too early. 
+== Rand 2: Distance/Score = 8.96155687634404 | Text = Typical indicators include top-1 hit rate, top-3 hit rate, mean reciprocal rank, and average retrieval latency. 
+== Rand 3: Distance/Score = 9.08914288096226 | Text = Instead, the report should identify which configurations are recommended under which conditions. 
+== Rand 4: Distance/Score = 9.11389697006484 | Text = These dimensions together form the basis of a best-practice report rather than isolated coding experiments. A good test knowledge base should support multiple question types. 
+== Rand 5: Distance/Score = 9.14667309589364 | Text = Conversely, a strong language model may sometimes produce a plausible answer even when retrieval is poor, which can hide defects in the retrieval layer. 
+Generate_Time: 0.38097500801086426 seconds
+Answer [12]: fixed too early
+============================================
+-- Connection to OpenGauss established sucessfully --
+-- Generate query embedding with shape: torch.Size([768]) --
+================= Retrival Logs =================
+Config: mark_200_50
+Query: What are the deployment advantages and disadvantages of using HuggingFace local embeddings versus Cohere hosted embeddings?
+Operator: <->
+Retrieval Time: 0.5743 seconds
+== Rand 1: Distance/Score = 8.24935309445842 | Text = Therefore, choosing between HuggingFace and Cohere is not only a question of retrieval accuracy, but also a question of deployment constraints, response latency, operating cost, and system 
+== Rand 2: Distance/Score = 8.30052894837154 | Text = A local HuggingFace embedding model may be suitable for offline experimentation, while Cohere may be more practical for remote or hybrid deployments. 
+== Rand 3: Distance/Score = 8.43190461170306 | Text = The second dimension is embedding backend. HuggingFace local embeddings provide more deployment autonomy, while Cohere embeddings may provide higher convenience or better hosted performance. 
+== Rand 4: Distance/Score = 8.53116996084821 | Text = HuggingFace models are suitable when local execution and offline control are important. 
+== Rand 5: Distance/Score = 8.7956364303468 | Text = Some should ask for comparisons, such as the difference between HuggingFace embeddings and Cohere embeddings. 
+Generate_Time: 1.7078213691711426 seconds
+Answer [13]: HuggingFace local embeddings provide more deployment autonomy, while Cohere embeddings may provide higher convenience or better hosted performance
+============================================
+-- Connection to OpenGauss established sucessfully --
+-- Generate query embedding with shape: torch.Size([768]) --
+================= Retrival Logs =================
+Config: mark_200_50
+Query: Why does the project recommend performing large-scale document chunking, bulk embedding generation, and batch insertion on a stronger machine rather than on the RK3568 edge device?
+Operator: <->
+Retrieval Time: 0.3661 seconds
+== Rand 1: Distance/Score = 8.34786782824405 | Text = Finally, the RK3568 deployment target introduces real-world constraints that force the system toward a minimal, stable, and well-justified implementation. 
+== Rand 2: Distance/Score = 8.42655268547778 | Text = It also makes it easier to run controlled experiments because the retrieval result can be linked back to the exact preprocessing configuration used when the chunk was inserted into the database. 
+== Rand 3: Distance/Score = 8.61892441980418 | Text = This architecture makes it possible to build a complete retrieval and question answering workflow on top of a database system instead of relying only on an in-memory vector engine. 
+== Rand 4: Distance/Score = 8.6363265260328 | Text = This reduces local computation pressure and can simplify deployment on lightweight edge devices, but it requires network access and external service credentials. 
+== Rand 5: Distance/Score = 8.70899554446749 | Text = Instead, the report should identify which configurations are recommended under which conditions. 
+Generate_Time: 0.4897191524505615 seconds
+Answer [14]: reduces local computation pressure
+============================================
+-- Connection to OpenGauss established sucessfully --
+-- Generate query embedding with shape: torch.Size([768]) --
+================= Retrival Logs =================
+Config: mark_200_50
+Query: According to the text, what are the four main forms of deliverables that the final project output should include?
+Operator: <->
+Retrieval Time: 0.4927 seconds
+== Rand 1: Distance/Score = 8.27421852870361 | Text = Such conclusions are more valuable than raw benchmark tables because they can guide future engineering decisions. The final project output should include several forms of deliverables. 
+== Rand 2: Distance/Score = 9.11695695469544 | Text = Therefore, the final deployment plan should distinguish between what is validated in a development environment and what is realistic on the target board. 
+== Rand 3: Distance/Score = 9.20004143083614 | Text = Even in a prototype stage, a clean project structure with separate modules for chunking, embedding, database access, retrieval, and service packaging greatly improves maintainability. 
+== Rand 4: Distance/Score = 9.22061603862974 | Text = Finally, the RK3568 deployment target introduces real-world constraints that force the system toward a minimal, stable, and well-justified implementation. 
+== Rand 5: Distance/Score = 9.25032084140573 | Text = Instead, the report should identify which configurations are recommended under which conditions. 
+Generate_Time: 0.7395360469818115 seconds
+Answer [15]: [iii]
+============================================
+-- Connection to OpenGauss established sucessfully --
+-- Generate query embedding with shape: torch.Size([768]) --
+================= Retrival Logs =================
+Config: mark_200_50
+Query: Why does the text suggest including both chunk size and overlap size in the metadata fields of the embedding table?
+Operator: <->
+Retrieval Time: 0.4029 seconds
+== Rand 1: Distance/Score = 8.45502736796096 | Text = For example, a certain chunk size may work best for technical manuals, while a different overlap may help with fragmented deployment notes. 
+== Rand 2: Distance/Score = 8.51656164215288 | Text = Common choices include chunk sizes of one hundred, three hundred, or five hundred words or tokens, with overlaps ranging from zero to one hundred. 
+== Rand 3: Distance/Score = 8.83103519510524 | Text = It also makes it easier to run controlled experiments because the retrieval result can be linked back to the exact preprocessing configuration used when the chunk was inserted into the database. 
+== Rand 4: Distance/Score = 9.01032512522743 | Text = The first dimension is chunking strategy. Fixed-length chunking is simple and easy to reproduce, but sentence-based or punctuation-based chunking may better preserve semantic boundaries. 
+== Rand 5: Distance/Score = 9.08754368998481 | Text = Instead, the report should identify which configurations are recommended under which conditions. 
+Generate_Time: 1.7077300548553467 seconds
+Answer [16]: It also makes it easier to run controlled experiments because the retrieval result can be linked back to the exact preprocessing configuration used when the chunk was inserted into the database
+============================================
+-- Connection to OpenGauss established sucessfully --
+-- Generate query embedding with shape: torch.Size([768]) --
+================= Retrival Logs =================
+Config: mark_200_50
+Query: In this project, why does BentoML serve as the application service layer rather than as an embedding model itself?
+Operator: <->
+Retrieval Time: 0.4037 seconds
+== Rand 1: Distance/Score = 7.68428977369879 | Text = In the context of this project, BentoML serves as the application service layer rather than as an embedding model itself. 
+== Rand 2: Distance/Score = 8.68234517142582 | Text = Therefore, both stages should be evaluated independently. BentoML can be used to package the retrieval and question answering logic as a deployable service. 
+== Rand 3: Distance/Score = 8.68488607258322 | Text = This architecture makes it possible to build a complete retrieval and question answering workflow on top of a database system instead of relying only on an in-memory vector engine. 
+== Rand 4: Distance/Score = 8.69266362042562 | Text = The best configuration depends on the structure of the source document and the nature of the user queries. After chunking, the next stage is embedding generation. 
+== Rand 5: Distance/Score = 8.7323203084146 | Text = Instead of exposing raw Python scripts, the engineer can define a service interface such as ask(query: str) and let BentoML handle model packaging, dependency management, and API serving. 
+Generate_Time: 0.5466434955596924 seconds
+Answer [17]: both stages should be evaluated independently
+============================================
+-- Connection to OpenGauss established sucessfully --
+-- Generate query embedding with shape: torch.Size([768]) --
+================= Retrival Logs =================
+Config: mark_200_50
+Query: What benefits does using OpenGauss provide by storing both the original text content and the embedding vectors in a RetrievalQA pipeline?
+Operator: <->
+Retrieval Time: 0.3895 seconds
+== Rand 1: Distance/Score = 8.45370532175047 | Text = OpenGauss is an enterprise-grade relational database that can also be used as a vector store for retrieval-augmented generation systems. 
+== Rand 2: Distance/Score = 8.48959521583396 | Text = In a RetrievalQA pipeline, the database is not only responsible for storing original text chunks, but also for storing the embedding vectors that represent the semantic meaning of those chunks. 
+== Rand 3: Distance/Score = 8.51745518606818 | Text = This architecture makes it possible to build a complete retrieval and question answering workflow on top of a database system instead of relying only on an in-memory vector engine. 
+== Rand 4: Distance/Score = 8.76366208107599 | Text = It also makes it easier to run controlled experiments because the retrieval result can be linked back to the exact preprocessing configuration used when the chunk was inserted into the database. 
+== Rand 5: Distance/Score = 9.20384039956071 | Text = However, model size, inference latency, and memory usage can become critical on resource-constrained devices. Cohere embeddings, in contrast, are generated by calling a remote API. 
+Generate_Time: 1.1652863025665283 seconds
+Answer [18]: makes it possible to build a complete retrieval and question answering workflow on top of a database system
+============================================

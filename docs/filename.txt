@@ -1,0 +1,32 @@
+project_root/
+│
+├─ .venv/
+├─ app/
+│  ├─ __init__.py
+│  ├─ config.py  ###
+│  ├─ hf_embedder.py
+│  ├─ cohere_embedder.py  ###
+│  ├─ opengauss_vector_store.py  ###
+│  ├─ rag_pipeline.py  ###
+│  ├─ text_chunker.py
+│  └─ bento_service.py  ###
+├─ data/
+│  ├─ kb_chunks_dataset
+│  ├─ hf_embeddings_dataset
+│  ├─ 
+│  └─ cohere_embeddings_dataset  ###
+│
+├─ scripts/
+│  ├─ build_index_hf_opengauss.py
+│  ├─ build_index_cohere.py  ###
+│  ├─ test_retrieval.py
+│  └─ test_rag.py  ###
+│
+├─ docker/
+│  ├─ Dockerfile
+│  ├─ docker-compose.yml
+│  └─ init_db.sh
+│
+├─ docs/
+├─ requirements.txt
+└─ README.md

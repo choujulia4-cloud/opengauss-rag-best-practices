@@ -1,0 +1,19 @@
+Query 序号,Query（简写）,Top-3 retrieval_top1_hit,Top-3 answer_correct,Top-3 answer_grounded,Top-3 answer_complete,Top-3 hallucination,与 Top-5 对比变化
+1,OpenGauss role,1,2,2,2,0,持平（已很好）
+2,Why divide long documents,1,2,2,2,0,提升（从 1→2）
+3,Two embedding sources,0,0,0,0,0,下降（Top-5 时为 2）
+4,BentoML role,1,2,2,2,0,持平
+5,Why RK3568 resource-constrained,1,2,2,2,0,提升
+6,Tasks on stronger machine,0,1,1,1,0,轻微下降
+7,Differences HF vs Cohere,1,2,2,1,0,持平
+8,Why separate retrieval & generation,1,2,2,2,0,提升
+9,Dimensions for best-practice,0,1,1,1,0,持平
+10,Recommended minimal for RK3568,0,2,2,2,0,显著提升
+11,Metadata fields,0,0,0,0,0,持平（仍弱）
+12,Why similarity operator,1,1,2,1,0,持平
+13,Deployment adv/disadv HF vs Cohere,1,2,2,2,0,持平
+14,Why large-scale on stronger machine,0,0,1,0,0,持平（仍弱）
+15,Four main deliverables,0,0,0,0,0,持平（仍弱）
+16,Why include chunk/overlap in metadata,1,2,2,2,0,提升
+17,Why BentoML as service layer,1,2,2,2,0,提升
+18,Benefits of storing text + vectors,1,2,2,2,0,提升
