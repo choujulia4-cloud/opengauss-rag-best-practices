@@ -1,0 +1,194 @@
+可以，下面这些问题就是**专门针对上述 `knowledge_base_text` 设计的 RetrievalQA 测试问题**，能够服务你前面说的几个实践目的：
+
+* 测试检索是否命中
+* 测试 chunk 是否切得合理
+* 测试问答是否能基于上下文作答
+* 测试最佳实践探索时，不同参数/不同 embedding 路线的效果差异
+
+我按类型给你分好。
+
+---
+
+## 1. 事实型问题
+
+这类问题适合测试 **Top1/Topk 检索命中率**。
+
+```text
+1. What role does OpenGauss play in a RetrievalQA pipeline?
+2. What is stored in the database besides the original text chunks?
+3. Why must long source documents be divided into smaller chunks?
+4. What factors should be treated as tunable parameters in chunking?
+5. What are the two embedding sources mentioned in this project?
+6. Why are HuggingFace models suitable for local execution?
+7. Why can Cohere embeddings reduce local computation pressure?
+8. What metadata fields are recommended for the OpenGauss embedding table?
+9. Which retrieval metrics are suggested for evaluating the retrieval layer?
+10. What does BentoML do in this project?
+11. Why is Docker important for AArch64 deployment?
+12. Why is RK3568 considered a resource-constrained edge device?
+13. What tasks are suggested to be completed on a stronger machine instead of the edge device?
+14. What are the four forms of final project deliverables?
+15. Why should retrieval evaluation be separated from generation evaluation?
+```
+
+---
+
+## 2. 流程型问题
+
+这类问题适合测试 **分块是否保留了完整过程信息**。
+
+```text
+16. How does a typical RetrievalQA workflow proceed from raw documents to final answer generation?
+17. How does the system answer a user question after the query is submitted?
+18. How are chunking, embedding generation, and vector retrieval connected in the pipeline?
+19. How can BentoML package the retrieval and question answering logic into a deployable service?
+20. How should the final deployment plan distinguish between development validation and target-board deployment?
+21. What steps are involved in building a practical OpenGauss-based vector retrieval system?
+22. How should an engineer organize the project structure for maintainability?
+```
+
+---
+
+## 3. 对比型问题
+
+这类问题适合测试 **多个 chunk 联合检索**，也适合观察模型是否能做总结。
+
+```text
+23. What are the main differences between HuggingFace embeddings and Cohere embeddings?
+24. How do short chunks and long chunks affect retrieval quality differently?
+25. What is the difference between retrieval evaluation and generation evaluation?
+26. How does offline preprocessing on a stronger machine differ from online query handling on an edge device?
+27. What is the difference between a desktop deployment environment and an RK3568 deployment environment?
+28. Why is a best-practice report more useful than isolated coding experiments?
+29. How is BentoML different from an embedding model in this project?
+30. What is the difference between fixed-length chunking and sentence-based chunking?
+```
+
+---
+
+## 4. 原因分析型问题
+
+这类问题适合测试 **为什么** 类问答，比较适合验证 RAG 生成质量。
+
+```text
+31. Why can chunk size directly influence retrieval quality?
+32. Why should similarity operator selection be included in best-practice exploration?
+33. Why may a strong language model hide defects in the retrieval layer?
+34. Why is it not realistic to run large embedding models and heavy generation models simultaneously on RK3568?
+35. Why should configuration files and environment variables be standardized early?
+36. Why can repeated reruns create duplicate database records?
+37. Why should model caches be managed carefully?
+38. Why is a layered knowledge base better for RetrievalQA evaluation?
+39. Why is the final project not just about making a question answering demo?
+40. Why is the minimal stable implementation important for RK3568 deployment?
+```
+
+---
+
+## 5. 最佳实践探索型问题
+
+这类问题最适合你的项目目标，因为它们直接对应“最佳实践总结”。
+
+```text
+41. What dimensions should be tested systematically for best-practice exploration?
+42. Which chunking parameters should be tuned in experiments?
+43. What retrieval parameters should be compared during optimization?
+44. What deployment-related indicators should be measured on an edge device?
+45. Under what conditions might a local HuggingFace embedding model be recommended?
+46. Under what conditions might Cohere be more practical?
+47. What is the recommended minimal solution for RK3568 according to the text?
+48. What kinds of conclusions are more valuable than raw benchmark tables?
+49. What should a best-practice report include for standard Linux servers and AArch64 edge devices?
+50. What deployment strategy is recommended for a resource-constrained edge board?
+```
+
+---
+
+## 6. 板端部署相关问题
+
+这部分特别适合你后面做 RK3568 最小实现验证。
+
+```text
+51. Why should large-scale embedding generation be moved off the edge device?
+52. What should the edge device focus on in a production-style deployment strategy?
+53. Why does containerization remain useful even though it cannot remove hardware constraints?
+54. What kind of deployment role is most suitable for RK3568 in this project?
+55. What are the main resource limitations mentioned for RK3568?
+56. Why is a lightweight local service more realistic than a heavy full local pipeline on RK3568?
+57. What should be measured when optimizing deployment behavior on an edge device?
+58. Why is service stability under repeated queries important for edge deployment?
+```
+
+---
+
+# 如果你要真正拿来做实验，我建议你这样分三组
+
+## 第一组：检索基础测试
+
+先用这些最直接的问题：
+
+```text
+1, 3, 5, 8, 10, 12, 14, 23, 25, 47
+```
+
+作用：
+
+* 看能不能命中正确 chunk
+* 看 Top1 / Top3 是否稳定
+
+---
+
+## 第二组：RAG 生成测试
+
+用这些需要整合和解释的问题：
+
+```text
+16, 18, 24, 31, 33, 34, 38, 40, 48, 50
+```
+
+作用：
+
+* 看最终回答是否完整
+* 看是否会胡编
+
+---
+
+## 第三组：最佳实践探索测试
+
+用这些更贴近你项目报告的问题：
+
+```text
+41, 42, 43, 44, 45, 46, 47, 49, 54, 57
+```
+
+作用：
+
+* 很适合写进“最佳实践报告”
+* 很适合比较不同 chunk / top_k / embedding 路线
+
+---
+
+# 最后给你一个最实用的建议
+
+如果你现在想先快速开跑，先固定这 12 个问题就够了：
+
+```text
+1. What role does OpenGauss play in a RetrievalQA pipeline?
+2. Why must long source documents be divided into smaller chunks?
+3. What are the two embedding sources mentioned in this project?
+4. What metadata fields are recommended for the OpenGauss embedding table?
+5. What does BentoML do in this project?
+6. Why is RK3568 considered a resource-constrained edge device?
+7. What tasks should be completed on a stronger machine instead of the edge device?
+8. What are the main differences between HuggingFace embeddings and Cohere embeddings?
+9. Why should retrieval evaluation be separated from generation evaluation?
+10. What dimensions should be tested systematically for best-practice exploration?
+11. What is the recommended minimal solution for RK3568 according to the text?
+12. What deployment strategy is recommended for a resource-constrained edge board?
+```
+
+这 12 个已经足够你做第一轮 RetrievalQA 验证了。
+
+下一条如果你要，我可以直接继续给你：
+**每个问题对应的标准答案 reference version**，方便你后面做自动评测。
+
