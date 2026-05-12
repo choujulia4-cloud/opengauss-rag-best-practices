@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-03",
+  "query_id": "Q07",
+  "query": "Why can Cohere embeddings reduce local computation pressure?",
+  "gold_type": "definition",
+  "predicted_type": "unknown",
+  "predicted_type_raw": "definition query: in what ways do bert and gpt-3 differ in handling context for language generation?\n comparison query: list",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "latency_s": 21.9958
+}

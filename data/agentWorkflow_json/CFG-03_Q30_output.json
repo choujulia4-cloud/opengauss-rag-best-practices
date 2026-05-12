@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-03",
+  "query_id": "Q30",
+  "query": "What should the edge device focus on in a production-style deployment strategy?",
+  "gold_type": "deployment_or_recommendation",
+  "predicted_type": "deployment_or_recommendation",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "latency_s": 0.0
+}

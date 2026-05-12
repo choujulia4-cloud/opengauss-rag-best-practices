@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-03",
+  "query_id": "Q34",
+  "query": "What are the reasons why chunking strategy directly affects retrieval quality, and can you give examples of inappropriate chunk sizes and their consequences?",
+  "gold_type": "unknown",
+  "predicted_type": "list_or_enumeration",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "latency_s": 0.0
+}

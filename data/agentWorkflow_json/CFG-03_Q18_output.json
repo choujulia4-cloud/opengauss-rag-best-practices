@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-03",
+  "query_id": "Q18",
+  "query": "What tunable parameters are involved in document chunking, and list common value ranges of them.",
+  "gold_type": "list_or_enumeration",
+  "predicted_type": "list_or_enumeration",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "latency_s": 0.0
+}

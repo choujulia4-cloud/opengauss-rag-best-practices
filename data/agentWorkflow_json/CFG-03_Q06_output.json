@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-03",
+  "query_id": "Q06",
+  "query": "Why are HuggingFace models suitable for local execution?",
+  "gold_type": "definition",
+  "predicted_type": "deployment_or_recommendation",
+  "predicted_type_raw": "unknown",
+  "classify_type": "hybrid",
+  "actual_classify_type": "model",
+  "latency_s": 8.3214
+}

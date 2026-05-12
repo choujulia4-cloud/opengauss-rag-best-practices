@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-03",
+  "query_id": "Q10",
+  "query": "How do short chunks and long chunks affect retrieval quality differently?",
+  "gold_type": "comparison",
+  "predicted_type": "unknown",
+  "predicted_type_raw": "comparison query: in what ways does the implementation of a nosql database differ from a traditional sql database in terms of data retrieval and scalability?",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "latency_s": 22.1461
+}

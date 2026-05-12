@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-03",
+  "query_id": "Q14",
+  "query": "Why is a best-practice report more useful than isolated coding experiments?",
+  "gold_type": "comparison",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "latency_s": 0.0
+}

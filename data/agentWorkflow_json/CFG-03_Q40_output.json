@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-03",
+  "query_id": "Q40",
+  "query": "Compare the advantages and disadvantages of fixed-length chunking and sentence-based chunking, and under what circumstances is each more suitable?",
+  "gold_type": "unknown",
+  "predicted_type": "comparison",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "latency_s": 0.0
+}

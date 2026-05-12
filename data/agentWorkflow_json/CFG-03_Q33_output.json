@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-03",
+  "query_id": "Q33",
+  "query": "How does the combination of OpenGauss and BentoML help transform a RetrievalQA prototype into a deployable service, and what key issues should be noted during this process?",
+  "gold_type": "unknown",
+  "predicted_type": "deployment_or_recommendation",
+  "predicted_type_raw": "unknown",
+  "classify_type": "hybrid",
+  "actual_classify_type": "model",
+  "latency_s": 8.7718
+}

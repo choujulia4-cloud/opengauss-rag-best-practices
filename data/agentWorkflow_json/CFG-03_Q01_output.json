@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-03",
+  "query_id": "Q01",
+  "query": "What role does OpenGauss play in a RetrievalQA pipeline?",
+  "gold_type": "definition",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "latency_s": 0.0
+}

@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-03",
+  "query_id": "Q09",
+  "query": "What are the main differences between HuggingFace embeddings and Cohere embeddings?",
+  "gold_type": "comparison",
+  "predicted_type": "comparison",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "latency_s": 0.0
+}

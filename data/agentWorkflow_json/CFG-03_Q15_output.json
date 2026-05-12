@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-03",
+  "query_id": "Q15",
+  "query": "How is BentoML different from an embedding model in this project?",
+  "gold_type": "comparison",
+  "predicted_type": "unknown",
+  "predicted_type_raw": "comparison query: in what ways does bentoml facilitate the deployment of machine learning models compared to traditional methods?\n deployment_or_re",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "latency_s": 22.153
+}

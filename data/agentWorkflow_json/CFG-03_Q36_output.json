@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-03",
+  "query_id": "Q36",
+  "query": "Why is it necessary to separate retrieval evaluation from generation evaluation in a practical RetrievalQA system, and what indicators are used to measure each?",
+  "gold_type": "unknown",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "latency_s": 0.0
+}
