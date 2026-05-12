@@ -1,0 +1,31 @@
+{
+  "config_id": "CFG-05",
+  "query_id": "Q56",
+  "query": "Which Linux kernel patch is required for RK3568 in this project?",
+  "gold_type": "unknown",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "rules",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "rules",
+  "rewrite_type_used": "rules",
+  "query_rewrite": "Which Linux kernel patch is required for RK3568 in this project?",
+  "query_rewrite_raw": "Which Linux kernel patch is required for RK3568 in this project?",
+  "rewrite_changed": false,
+  "strategy_top_k": 3,
+  "retrieval_results": [
+    [
+      "On RK3568, the recommended minimal solution may be to deploy OpenGauss and a lightweight service endpoint locally, while performing large-scale embedding generation on a separate machine.",
+      -75.6198425292969
+    ],
+    [
+      "Finally, the RK3568 deployment target introduces real-world constraints that force the system toward a minimal, stable, and well-justified implementation.",
+      -73.8313674926758
+    ],
+    [
+      "For deployment on AArch64 platforms, such as RK3568 boards, containerization becomes even more important because it reduces manual configuration drift across devices.",
+      -70.8589782714844
+    ]
+  ],
+  "latency_s": 0.2307
+}

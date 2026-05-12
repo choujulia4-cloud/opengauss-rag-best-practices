@@ -1,0 +1,31 @@
+{
+  "config_id": "CFG-04",
+  "query_id": "Q52",
+  "query": "Why does that matter?",
+  "gold_type": "unknown",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "rules",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "none",
+  "rewrite_type_used": "none",
+  "query_rewrite": "Why does that matter?",
+  "query_rewrite_raw": "",
+  "rewrite_changed": false,
+  "strategy_top_k": 3,
+  "retrieval_results": [
+    [
+      "Factoid questions, procedural questions, and summary questions may stress the retrieval system in different ways.",
+      -56.825080871582
+    ],
+    [
+      "When a user submits a question, the system converts the question into an embedding vector and performs similarity search against the stored vectors.",
+      -56.7530822753906
+    ],
+    [
+      "If the knowledge base contains layered information like concepts, procedures, trade-offs, and deployment notes, then it becomes suitable for evaluating both retrieval accuracy and answer generation",
+      -56.4536590576172
+    ]
+  ],
+  "latency_s": 0.2344
+}

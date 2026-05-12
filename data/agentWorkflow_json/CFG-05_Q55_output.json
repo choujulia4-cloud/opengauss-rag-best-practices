@@ -1,0 +1,31 @@
+{
+  "config_id": "CFG-05",
+  "query_id": "Q55",
+  "query": "What benchmark result does this project report for FAISS GPU indexing?",
+  "gold_type": "unknown",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "rules",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "rules",
+  "rewrite_type_used": "rules",
+  "query_rewrite": "What benchmark result does this project report for FAISS GPU indexing?",
+  "query_rewrite_raw": "What benchmark result does this project report for FAISS GPU indexing?",
+  "rewrite_changed": false,
+  "strategy_top_k": 3,
+  "retrieval_results": [
+    [
+      "Typical indicators include top-1 hit rate, top-3 hit rate, mean reciprocal rank, and average retrieval latency.",
+      -71.0615386962891
+    ],
+    [
+      "The third is a best-practice report that summarizes experiments, explains trade-offs, and recommends configurations for both standard Linux servers and AArch64 edge devices.",
+      -70.0447463989258
+    ],
+    [
+      "OpenGauss is an enterprise-grade relational database that can also be used as a vector store for retrieval-augmented generation systems.",
+      -69.8677215576172
+    ]
+  ],
+  "latency_s": 0.2255
+}

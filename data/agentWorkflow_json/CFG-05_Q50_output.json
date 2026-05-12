@@ -1,0 +1,31 @@
+{
+  "config_id": "CFG-05",
+  "query_id": "Q50",
+  "query": "Which one is better here?",
+  "gold_type": "unknown",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "rules",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "rules",
+  "rewrite_type_used": "rules",
+  "query_rewrite": "Which one is better here?",
+  "query_rewrite_raw": "Which one is better here?",
+  "rewrite_changed": false,
+  "strategy_top_k": 3,
+  "retrieval_results": [
+    [
+      "Some should ask for comparisons, such as the difference between HuggingFace embeddings and Cohere embeddings.",
+      -58.6952362060547
+    ],
+    [
+      "Typical indicators include top-1 hit rate, top-3 hit rate, mean reciprocal rank, and average retrieval latency.",
+      -58.1819801330566
+    ],
+    [
+      "Instead, the report should identify which configurations are recommended under which conditions.",
+      -57.8102340698242
+    ]
+  ],
+  "latency_s": 0.2262
+}

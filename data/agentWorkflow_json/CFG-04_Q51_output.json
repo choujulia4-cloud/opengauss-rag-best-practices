@@ -1,0 +1,31 @@
+{
+  "config_id": "CFG-04",
+  "query_id": "Q51",
+  "query": "What is the best choice for this project?",
+  "gold_type": "unknown",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "rules",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "none",
+  "rewrite_type_used": "none",
+  "query_rewrite": "What is the best choice for this project?",
+  "query_rewrite_raw": "",
+  "rewrite_changed": false,
+  "strategy_top_k": 3,
+  "retrieval_results": [
+    [
+      "Instead, the report should identify which configurations are recommended under which conditions.",
+      -63.0768623352051
+    ],
+    [
+      "Therefore, the final deployment plan should distinguish between what is validated in a development environment and what is realistic on the target board.",
+      -62.0457725524902
+    ],
+    [
+      "Such conclusions are more valuable than raw benchmark tables because they can guide future engineering decisions. The final project output should include several forms of deliverables.",
+      -61.9203720092773
+    ]
+  ],
+  "latency_s": 0.2382
+}

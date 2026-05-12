@@ -1,0 +1,31 @@
+{
+  "config_id": "CFG-04",
+  "query_id": "Q43",
+  "query": "RK3568 solution?",
+  "gold_type": "deployment_or_recommendation",
+  "predicted_type": "comparison",
+  "predicted_type_raw": "",
+  "classify_type": "rules",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "none",
+  "rewrite_type_used": "none",
+  "query_rewrite": "RK3568 solution?",
+  "query_rewrite_raw": "",
+  "rewrite_changed": false,
+  "strategy_top_k": 3,
+  "retrieval_results": [
+    [
+      "Finally, the RK3568 deployment target introduces real-world constraints that force the system toward a minimal, stable, and well-justified implementation.",
+      -66.5650024414062
+    ],
+    [
+      "The RK3568 platform is a typical resource-constrained edge device.",
+      -62.8539733886719
+    ],
+    [
+      "The third is a best-practice report that summarizes experiments, explains trade-offs, and recommends configurations for both standard Linux servers and AArch64 edge devices.",
+      -59.3365097045898
+    ]
+  ],
+  "latency_s": 0.2265
+}

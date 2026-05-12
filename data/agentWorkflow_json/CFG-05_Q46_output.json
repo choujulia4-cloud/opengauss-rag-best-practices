@@ -1,0 +1,31 @@
+{
+  "config_id": "CFG-05",
+  "query_id": "Q46",
+  "query": "How does this help deployment?",
+  "gold_type": "unknown",
+  "predicted_type": "deployment_or_recommendation",
+  "predicted_type_raw": "",
+  "classify_type": "rules",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "rules",
+  "rewrite_type_used": "rules",
+  "query_rewrite": "How does this help deployment?",
+  "query_rewrite_raw": "How does this help deployment?",
+  "rewrite_changed": false,
+  "strategy_top_k": 3,
+  "retrieval_results": [
+    [
+      "For this reason, configuration files, environment variables, and deployment scripts should be standardized early.",
+      -76.2776031494141
+    ],
+    [
+      "This makes it easier to validate end-to-end behavior and later document the deployment procedure for community contribution. Containerization is another key part of the project.",
+      -73.9656066894531
+    ],
+    [
+      "This is especially useful when moving from experimentation to reproducible deployment.",
+      -73.0405654907227
+    ]
+  ],
+  "latency_s": 0.226
+}
