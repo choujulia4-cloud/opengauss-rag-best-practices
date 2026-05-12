@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-01",
+  "query_id": "Q15",
+  "query": "How is BentoML different from an embedding model in this project?",
+  "gold_type": "comparison",
+  "predicted_type": "unknown",
+  "predicted_type_raw": "",
+  "classify_type": "rules",
+  "actual_classify_type": "rules",
+  "latency_s": 0.0
+}

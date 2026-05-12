@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-01",
+  "query_id": "Q28",
+  "query": "What deployment-related indicators should be measured on an edge device?",
+  "gold_type": "deployment_or_recommendation",
+  "predicted_type": "deployment_or_recommendation",
+  "predicted_type_raw": "",
+  "classify_type": "rules",
+  "actual_classify_type": "rules",
+  "latency_s": 0.0
+}

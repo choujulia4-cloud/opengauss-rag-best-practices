@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-01",
+  "query_id": "Q22",
+  "query": "List three common distance operators used for vector similarity search.",
+  "gold_type": "list_or_enumeration",
+  "predicted_type": "list_or_enumeration",
+  "predicted_type_raw": "",
+  "classify_type": "rules",
+  "actual_classify_type": "rules",
+  "latency_s": 0.0
+}

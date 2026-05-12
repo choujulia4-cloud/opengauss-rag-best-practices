@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-01",
+  "query_id": "Q31",
+  "query": "Why does containerization remain useful even though it cannot remove hardware constraints?",
+  "gold_type": "deployment_or_recommendation",
+  "predicted_type": "unknown",
+  "predicted_type_raw": "",
+  "classify_type": "rules",
+  "actual_classify_type": "rules",
+  "latency_s": 0.0
+}
