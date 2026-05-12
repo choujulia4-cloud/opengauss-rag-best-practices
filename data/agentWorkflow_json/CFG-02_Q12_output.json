@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-02",
+  "query_id": "Q12",
+  "query": "How does offline preprocessing on a stronger machine differ from online query handling on an edge device?",
+  "gold_type": "comparison",
+  "predicted_type": "comparison",
+  "predicted_type_raw": "",
+  "classify_type": "model",
+  "actual_classify_type": "model",
+  "latency_s": 3.3776
+}

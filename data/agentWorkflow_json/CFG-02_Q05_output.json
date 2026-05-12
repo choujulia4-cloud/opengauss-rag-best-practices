@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-02",
+  "query_id": "Q05",
+  "query": "What are the two embedding sources mentioned in this project?",
+  "gold_type": "definition",
+  "predicted_type": "list_or_enumeration",
+  "predicted_type_raw": "",
+  "classify_type": "model",
+  "actual_classify_type": "model",
+  "latency_s": 6.3871
+}

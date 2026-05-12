@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-02",
+  "query_id": "Q39",
+  "query": "What is the division of labor between a development workstation and an RK3568 edge device in a production-style deployment, and how does this division address resource constraints?",
+  "gold_type": "unknown",
+  "predicted_type": "deployment_or_recommendation",
+  "predicted_type_raw": "",
+  "classify_type": "model",
+  "actual_classify_type": "model",
+  "latency_s": 7.2539
+}

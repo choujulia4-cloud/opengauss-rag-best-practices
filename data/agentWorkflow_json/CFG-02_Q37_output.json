@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-02",
+  "query_id": "Q37",
+  "query": "How does containerization with Docker simplify the deployment of OpenGauss on AArch64 platforms like RK3568, and what hardware constraints still need to be considered?",
+  "gold_type": "unknown",
+  "predicted_type": "deployment_or_recommendation",
+  "predicted_type_raw": "",
+  "classify_type": "model",
+  "actual_classify_type": "model",
+  "latency_s": 7.2284
+}

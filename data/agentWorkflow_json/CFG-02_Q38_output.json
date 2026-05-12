@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-02",
+  "query_id": "Q38",
+  "query": "List the key metadata fields in an OpenGauss table for embedding storage, and explain why these fields are important for experimentation and optimization.",
+  "gold_type": "unknown",
+  "predicted_type": "list_or_enumeration",
+  "predicted_type_raw": "",
+  "classify_type": "model",
+  "actual_classify_type": "model",
+  "latency_s": 6.6341
+}

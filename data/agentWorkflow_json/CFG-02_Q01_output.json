@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-02",
+  "query_id": "Q01",
+  "query": "What role does OpenGauss play in a RetrievalQA pipeline?",
+  "gold_type": "definition",
+  "predicted_type": "definition",
+  "predicted_type_raw": "definition query: compare the performance of postgresql and mysql in handling large-scale data warehousing.\n\n        classify",
+  "classify_type": "model",
+  "actual_classify_type": "rules",
+  "latency_s": 22.9369
+}

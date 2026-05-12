@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-02",
+  "query_id": "Q11",
+  "query": "What is the difference between retrieval evaluation and generation evaluation?",
+  "gold_type": "comparison",
+  "predicted_type": "comparison",
+  "predicted_type_raw": "",
+  "classify_type": "model",
+  "actual_classify_type": "model",
+  "latency_s": 3.2483
+}

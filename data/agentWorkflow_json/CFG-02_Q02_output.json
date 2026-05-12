@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-02",
+  "query_id": "Q02",
+  "query": "What is stored in the database besides the original text chunks?",
+  "gold_type": "definition",
+  "predicted_type": "definition",
+  "predicted_type_raw": "definition metadata",
+  "classify_type": "model",
+  "actual_classify_type": "rules",
+  "latency_s": 4.7842
+}

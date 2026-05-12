@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-02",
+  "query_id": "Q35",
+  "query": "Explain the role of embedding vectors in the RetrievalQA pipeline, and compare the differences in how HuggingFace and Cohere generate these vectors.",
+  "gold_type": "unknown",
+  "predicted_type": "comparison",
+  "predicted_type_raw": "",
+  "classify_type": "model",
+  "actual_classify_type": "model",
+  "latency_s": 3.4865
+}

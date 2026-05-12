@@ -1,0 +1,11 @@
+{
+  "config_id": "CFG-02",
+  "query_id": "Q16",
+  "query": "What is the difference between fixed-length chunking and sentence-based chunking?",
+  "gold_type": "comparison",
+  "predicted_type": "definition",
+  "predicted_type_raw": "comparison you are a query intent classifier.\n\n        classify the user query into exactly one label from this set:\n        definition",
+  "classify_type": "model",
+  "actual_classify_type": "rules",
+  "latency_s": 18.6093
+}
