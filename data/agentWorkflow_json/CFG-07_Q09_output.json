@@ -1,0 +1,34 @@
+{
+  "config_id": "CFG-07",
+  "query_id": "Q09",
+  "query": "What are the main differences between HuggingFace embeddings and Cohere embeddings?",
+  "gold_type": "comparison",
+  "predicted_type": "comparison",
+  "predicted_type_raw": "",
+  "classify_type": "rules",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "none",
+  "rewrite_type_used": "none",
+  "query_rewrite": "What are the main differences between HuggingFace embeddings and Cohere embeddings?",
+  "query_rewrite_raw": "",
+  "rewrite_changed": false,
+  "rewrite_route_reason": "clear_query_no_rewrite",
+  "rewrite_is_valid": true,
+  "rewrite_valid_reason": "no_rewrite_baseline",
+  "strategy_top_k": 3,
+  "retrieval_results": [
+    [
+      "Some should ask for comparisons, such as the difference between HuggingFace embeddings and Cohere embeddings.",
+      -84.3866729736328
+    ],
+    [
+      "Therefore, choosing between HuggingFace and Cohere is not only a question of retrieval accuracy, but also a question of deployment constraints, response latency, operating cost, and system",
+      -83.9739303588867
+    ],
+    [
+      "The second dimension is embedding backend. HuggingFace local embeddings provide more deployment autonomy, while Cohere embeddings may provide higher convenience or better hosted performance.",
+      -81.4553833007812
+    ]
+  ],
+  "latency_s": 0.219
+}

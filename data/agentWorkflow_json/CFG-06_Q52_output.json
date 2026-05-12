@@ -1,0 +1,31 @@
+{
+  "config_id": "CFG-06",
+  "query_id": "Q52",
+  "query": "Why does that matter?",
+  "gold_type": "unknown",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "rules",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "model",
+  "rewrite_type_used": "model",
+  "query_rewrite": "Importance of the matter in question Significance of the issue at hand",
+  "query_rewrite_raw": "Importance of the matter in question Significance of the issue at hand",
+  "rewrite_changed": true,
+  "strategy_top_k": 3,
+  "retrieval_results": [
+    [
+      "The most relevant chunks are then returned as retrieval context for answer generation.",
+      -63.893741607666
+    ],
+    [
+      "If the knowledge base contains layered information like concepts, procedures, trade-offs, and deployment notes, then it becomes suitable for evaluating both retrieval accuracy and answer generation",
+      -63.1174468994141
+    ],
+    [
+      "Factoid questions, procedural questions, and summary questions may stress the retrieval system in different ways.",
+      -63.0661506652832
+    ]
+  ],
+  "latency_s": 14.2893
+}

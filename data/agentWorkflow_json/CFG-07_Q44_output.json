@@ -1,0 +1,34 @@
+{
+  "config_id": "CFG-07",
+  "query_id": "Q44",
+  "query": "Why is it useful there?",
+  "gold_type": "unknown",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "rules",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "hybrid",
+  "rewrite_type_used": "none",
+  "query_rewrite": "Why is it useful there?",
+  "query_rewrite_raw": "Utility of a specific context or location Utility of a specific context or location",
+  "rewrite_changed": false,
+  "rewrite_route_reason": "ambiguous_or_low_confidence_model",
+  "rewrite_is_valid": false,
+  "rewrite_valid_reason": "trewrite_too_long",
+  "strategy_top_k": 3,
+  "retrieval_results": [
+    [
+      "It also makes it easier to run controlled experiments because the retrieval result can be linked back to the exact preprocessing configuration used when the chunk was inserted into the database.",
+      -60.5257110595703
+    ],
+    [
+      "In summary, an OpenGauss-based RetrievalQA project is not only about making a question answering demo.",
+      -60.3632202148438
+    ],
+    [
+      "An engineer maintaining this system should also be aware of operational details. Repeated reruns may create duplicate database records if the insertion pipeline is not idempotent.",
+      -60.0438613891602
+    ]
+  ],
+  "latency_s": 14.8998
+}

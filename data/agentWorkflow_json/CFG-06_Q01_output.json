@@ -1,0 +1,31 @@
+{
+  "config_id": "CFG-06",
+  "query_id": "Q01",
+  "query": "What role does OpenGauss play in a RetrievalQA pipeline?",
+  "gold_type": "definition",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "rules",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "model",
+  "rewrite_type_used": "model",
+  "query_rewrite": "Role of OpenGauss in RetrievalQA pipeline Role of OpenGauss in RetrievalQA pipeline search",
+  "query_rewrite_raw": "Role of OpenGauss in RetrievalQA pipeline Role of OpenGauss in RetrievalQA pipeline search",
+  "rewrite_changed": true,
+  "strategy_top_k": 3,
+  "retrieval_results": [
+    [
+      "In a RetrievalQA pipeline, the database is not only responsible for storing original text chunks, but also for storing the embedding vectors that represent the semantic meaning of those chunks.",
+      -85.0875778198242
+    ],
+    [
+      "A typical RetrievalQA workflow contains several stages. The first stage is raw document preparation.",
+      -80.1052932739258
+    ],
+    [
+      "HuggingFace, Cohere, and BentoML each play different roles in the system. OpenGauss provides the persistent vector storage and retrieval backbone.",
+      -76.5888442993164
+    ]
+  ],
+  "latency_s": 28.8538
+}

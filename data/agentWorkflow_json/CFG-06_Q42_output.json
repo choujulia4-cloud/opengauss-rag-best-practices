@@ -1,0 +1,31 @@
+{
+  "config_id": "CFG-06",
+  "query_id": "Q42",
+  "query": "Cohere vs HuggingFace?",
+  "gold_type": "comparison",
+  "predicted_type": "comparison",
+  "predicted_type_raw": "",
+  "classify_type": "rules",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "model",
+  "rewrite_type_used": "model",
+  "query_rewrite": "Cohere vs HuggingFace comparison",
+  "query_rewrite_raw": "Cohere vs HuggingFace comparison",
+  "rewrite_changed": true,
+  "strategy_top_k": 3,
+  "retrieval_results": [
+    [
+      "Therefore, choosing between HuggingFace and Cohere is not only a question of retrieval accuracy, but also a question of deployment constraints, response latency, operating cost, and system",
+      -82.8505401611328
+    ],
+    [
+      "Some should ask for comparisons, such as the difference between HuggingFace embeddings and Cohere embeddings.",
+      -78.9233627319336
+    ],
+    [
+      "HuggingFace models are suitable when local execution and offline control are important.",
+      -76.0897064208984
+    ]
+  ],
+  "latency_s": 9.2783
+}

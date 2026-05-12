@@ -1,0 +1,34 @@
+{
+  "config_id": "CFG-07",
+  "query_id": "Q25",
+  "query": "What dimensions should be tested systematically for best-practice exploration?",
+  "gold_type": "deployment_or_recommendation",
+  "predicted_type": "list_or_enumeration",
+  "predicted_type_raw": "",
+  "classify_type": "rules",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "none",
+  "rewrite_type_used": "none",
+  "query_rewrite": "What dimensions should be tested systematically for best-practice exploration?",
+  "query_rewrite_raw": "",
+  "rewrite_changed": false,
+  "rewrite_route_reason": "clear_query_no_rewrite",
+  "rewrite_is_valid": true,
+  "rewrite_valid_reason": "no_rewrite_baseline",
+  "strategy_top_k": 3,
+  "retrieval_results": [
+    [
+      "These dimensions together form the basis of a best-practice report rather than isolated coding experiments. A good test knowledge base should support multiple question types.",
+      -75.7531356811523
+    ],
+    [
+      "This combination of system design, experimentation, and deployment reasoning is exactly what makes best-practice exploration meaningful.",
+      -73.519401550293
+    ],
+    [
+      "The third dimension is retrieval parameter tuning, including top-k value, distance metric, and whether embeddings are normalized.",
+      -71.9144744873047
+    ]
+  ],
+  "latency_s": 0.2323
+}

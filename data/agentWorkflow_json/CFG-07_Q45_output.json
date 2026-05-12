@@ -1,0 +1,34 @@
+{
+  "config_id": "CFG-07",
+  "query_id": "Q45",
+  "query": "Why should it be moved off the edge device?",
+  "gold_type": "unknown",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "rules",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "hybrid",
+  "rewrite_type_used": "model",
+  "query_rewrite": "Optimize edge device storage offloading reasons Optimize edge device storage offloading reasons",
+  "query_rewrite_raw": "Optimize edge device storage offloading reasons Optimize edge device storage offloading reasons",
+  "rewrite_changed": true,
+  "rewrite_route_reason": "ambiguous_or_low_confidence_model",
+  "rewrite_is_valid": true,
+  "rewrite_valid_reason": "accepted",
+  "strategy_top_k": 3,
+  "retrieval_results": [
+    [
+      "The edge device then focuses on online query handling, vector retrieval, and lightweight response assembly. This division of labor reduces memory pressure and improves stability.",
+      -74.2973709106445
+    ],
+    [
+      "This reduces local computation pressure and can simplify deployment on lightweight edge devices, but it requires network access and external service credentials.",
+      -69.3300018310547
+    ],
+    [
+      "It also matches realistic edge deployment patterns where the edge node provides fast local search while heavy model computation remains centralized.",
+      -68.8014755249023
+    ]
+  ],
+  "latency_s": 16.7836
+}
