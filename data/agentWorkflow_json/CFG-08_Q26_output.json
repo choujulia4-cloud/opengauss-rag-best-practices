@@ -1,0 +1,46 @@
+{
+  "config_id": "CFG-08",
+  "query_id": "Q26",
+  "query": "Which chunking parameters should be tuned in experiments?",
+  "gold_type": "deployment_or_recommendation",
+  "predicted_type": "list_or_enumeration",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "none",
+  "rewrite_type_used": "none",
+  "query_rewrite": "Which chunking parameters should be tuned in experiments?",
+  "query_rewrite_raw": "",
+  "rewrite_changed": false,
+  "rewrite_route_reason": "",
+  "rewrite_is_valid": true,
+  "rewrite_valid_reason": "no_rewrite_baseline",
+  "strategy_top_k": 3,
+  "strategy_generation_max_new_tokens": 256,
+  "strategy_answer_style": "safe_default",
+  "citations": [
+    {
+      "id": 1,
+      "rank": 1,
+      "score_or_distance": -76.6059188842773,
+      "source_id": "retrieved_chunk_1",
+      "snippet": "In practice, chunk size and chunk overlap should be treated as tunable parameters."
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "score_or_distance": -74.4058609008789,
+      "source_id": "retrieved_chunk_2",
+      "snippet": "Chunking strategy determines how information is represented. Embedding models determine how semantics are mapped into vectors. Retrieval settings determine how relevant context is selected."
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "score_or_distance": -73.0623931884766,
+      "source_id": "retrieved_chunk_3",
+      "snippet": "The first dimension is chunking strategy. Fixed-length chunking is simple and easy to reproduce, but sentence-based or punctuation-based chunking may better preserve semantic boundaries."
+    }
+  ],
+  "answer": "In experiments, the chunking parameters that should be tuned are chunk size and chunk overlap. These parameters are part of the chunking strategy, which is the first dimension in determining how information is represented. The context suggests that while fixed-length chunking is simple, sentence-based or punctuation-based chunking may better preserve semantic boundaries, indicating that these aspects of chunking strategy could also be considered for tuning based on the specific requirements of the experiment.",
+  "latency_s": 67.3071
+}

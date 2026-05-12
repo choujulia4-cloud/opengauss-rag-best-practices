@@ -1,0 +1,46 @@
+{
+  "config_id": "CFG-09",
+  "query_id": "Q51",
+  "query": "What is the best choice for this project?",
+  "gold_type": "unknown",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "hybrid",
+  "rewrite_type_used": "model",
+  "query_rewrite": "Optimal project choice query Optimal_project_selection_query",
+  "query_rewrite_raw": "Optimal project choice query Optimal_project_selection_query",
+  "rewrite_changed": true,
+  "rewrite_route_reason": "ambiguous_or_low_confidence_model",
+  "rewrite_is_valid": true,
+  "rewrite_valid_reason": "accepted",
+  "strategy_top_k": 3,
+  "strategy_generation_max_new_tokens": 256,
+  "strategy_answer_style": "concise_grounded",
+  "citations": [
+    {
+      "id": 1,
+      "rank": 1,
+      "score_or_distance": -73.0371780395508,
+      "source_id": "retrieved_chunk_1",
+      "snippet": "A practical RetrievalQA system should separate retrieval evaluation from generation evaluation. Retrieval evaluation asks whether the database returns the correct or at least useful chunks."
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "score_or_distance": -70.3054351806641,
+      "source_id": "retrieved_chunk_2",
+      "snippet": "Similarity search is the core operation of vector retrieval. Once query embeddings are generated, the system compares the query vector with stored chunk vectors and returns the nearest neighbors."
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "score_or_distance": -69.2678146362305,
+      "source_id": "retrieved_chunk_3",
+      "snippet": "Retrieval experiments should compare not only whether the system returns the correct chunk, but also whether the returned ranking is stable across different query types."
+    }
+  ],
+  "answer": "The context emphasizes the importance of stability in ranking across different query types during retrieval evaluation in a RetrievalQA system. It highlights the use of similarity search and the comparison of query embeddings with stored chunk vectors to return nearest neighbors. However, it does not provide specific information about the \"Optimal_project_selection_query.\" Therefore, the context does not contain enough information to answer the question.\n\nAnswer: The context does not provide sufficient information about the \"Optimal_project_selection_query.\"",
+  "latency_s": 89.3361
+}

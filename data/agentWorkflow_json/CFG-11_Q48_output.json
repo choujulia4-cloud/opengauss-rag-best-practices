@@ -1,0 +1,46 @@
+{
+  "config_id": "CFG-11",
+  "query_id": "Q48",
+  "query": "Why is HF better for local RAG deployment?",
+  "gold_type": "deployment_or_recommendation",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "none",
+  "rewrite_type_used": "none",
+  "query_rewrite": "Why is HF better for local RAG deployment?",
+  "query_rewrite_raw": "",
+  "rewrite_changed": false,
+  "rewrite_route_reason": "",
+  "rewrite_is_valid": true,
+  "rewrite_valid_reason": "no_rewrite_baseline",
+  "strategy_top_k": 3,
+  "strategy_generation_max_new_tokens": 256,
+  "strategy_answer_style": "concise_grounded",
+  "citations": [
+    {
+      "id": 1,
+      "rank": 1,
+      "score_or_distance": -68.7848587036133,
+      "source_id": "retrieved_chunk_1",
+      "snippet": "For deployment on AArch64 platforms, such as RK3568 boards, containerization becomes even more important because it reduces manual configuration drift across devices."
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "score_or_distance": -67.3936157226562,
+      "source_id": "retrieved_chunk_2",
+      "snippet": "A local HuggingFace embedding model may be suitable for offline experimentation, while Cohere may be more practical for remote or hybrid deployments."
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "score_or_distance": -65.5253524780273,
+      "source_id": "retrieved_chunk_3",
+      "snippet": "Therefore, choosing between HuggingFace and Cohere is not only a question of retrieval accuracy, but also a question of deployment constraints, response latency, operating cost, and system"
+    }
+  ],
+  "answer": "HuggingFace's local embedding model is more suitable for offline experimentation, implying it may be more convenient or efficient for local RAG deployment scenarios. The context does not explicitly state why HF is better, but suggests its suitability for local use.",
+  "latency_s": 41.2846
+}

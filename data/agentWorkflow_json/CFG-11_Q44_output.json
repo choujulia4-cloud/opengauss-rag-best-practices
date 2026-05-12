@@ -1,0 +1,46 @@
+{
+  "config_id": "CFG-11",
+  "query_id": "Q44",
+  "query": "Why is it useful there?",
+  "gold_type": "unknown",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "hybrid",
+  "rewrite_type_used": "none",
+  "query_rewrite": "Why is it useful there?",
+  "query_rewrite_raw": "",
+  "rewrite_changed": false,
+  "rewrite_route_reason": "",
+  "rewrite_is_valid": false,
+  "rewrite_valid_reason": "trewrite_too_long",
+  "strategy_top_k": 3,
+  "strategy_generation_max_new_tokens": 256,
+  "strategy_answer_style": "concise_grounded",
+  "citations": [
+    {
+      "id": 1,
+      "rank": 1,
+      "score_or_distance": -60.5257110595703,
+      "source_id": "retrieved_chunk_1",
+      "snippet": "It also makes it easier to run controlled experiments because the retrieval result can be linked back to the exact preprocessing configuration used when the chunk was inserted into the database."
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "score_or_distance": -60.3632202148438,
+      "source_id": "retrieved_chunk_2",
+      "snippet": "In summary, an OpenGauss-based RetrievalQA project is not only about making a question answering demo."
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "score_or_distance": -60.0438613891602,
+      "source_id": "retrieved_chunk_3",
+      "snippet": "An engineer maintaining this system should also be aware of operational details. Repeated reruns may create duplicate database records if the insertion pipeline is not idempotent."
+    }
+  ],
+  "answer": "It allows for easier controlled experiments by linking retrieval results to the specific preprocessing configurations used during database insertion, and it highlights the importance of maintaining idempotency in the insertion pipeline to avoid duplicate records.",
+  "latency_s": 50.3442
+}

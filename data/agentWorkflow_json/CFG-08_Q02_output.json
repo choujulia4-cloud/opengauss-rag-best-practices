@@ -1,0 +1,46 @@
+{
+  "config_id": "CFG-08",
+  "query_id": "Q02",
+  "query": "What is stored in the database besides the original text chunks?",
+  "gold_type": "definition",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "none",
+  "rewrite_type_used": "none",
+  "query_rewrite": "What is stored in the database besides the original text chunks?",
+  "query_rewrite_raw": "",
+  "rewrite_changed": false,
+  "rewrite_route_reason": "",
+  "rewrite_is_valid": true,
+  "rewrite_valid_reason": "no_rewrite_baseline",
+  "strategy_top_k": 3,
+  "strategy_generation_max_new_tokens": 256,
+  "strategy_answer_style": "safe_default",
+  "citations": [
+    {
+      "id": 1,
+      "rank": 1,
+      "score_or_distance": -77.4924621582031,
+      "source_id": "retrieved_chunk_1",
+      "snippet": "In a RetrievalQA pipeline, the database is not only responsible for storing original text chunks, but also for storing the embedding vectors that represent the semantic meaning of those chunks."
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "score_or_distance": -77.4577941894531,
+      "source_id": "retrieved_chunk_2",
+      "snippet": "These documents are often too long to be embedded directly, so they must be divided into smaller chunks. Chunking strategy has a direct influence on retrieval quality."
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "score_or_distance": -77.4046401977539,
+      "source_id": "retrieved_chunk_3",
+      "snippet": "The most relevant chunks are then returned as retrieval context for answer generation."
+    }
+  ],
+  "answer": "The database stores not only the original text chunks but also the embedding vectors that represent the semantic meaning of those chunks. These embedding vectors are crucial for representing the semantic content of the text chunks in a form that can be processed by the RetrievalQA pipeline.",
+  "latency_s": 46.1989
+}

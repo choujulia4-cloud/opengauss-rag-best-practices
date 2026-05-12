@@ -1,0 +1,46 @@
+{
+  "config_id": "CFG-11",
+  "query_id": "Q49",
+  "query": "What should RK3568 focus on in prod-style RAG?",
+  "gold_type": "deployment_or_recommendation",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "none",
+  "rewrite_type_used": "none",
+  "query_rewrite": "What should RK3568 focus on in prod-style RAG?",
+  "query_rewrite_raw": "",
+  "rewrite_changed": false,
+  "rewrite_route_reason": "",
+  "rewrite_is_valid": true,
+  "rewrite_valid_reason": "no_rewrite_baseline",
+  "strategy_top_k": 3,
+  "strategy_generation_max_new_tokens": 256,
+  "strategy_answer_style": "concise_grounded",
+  "citations": [
+    {
+      "id": 1,
+      "rank": 1,
+      "score_or_distance": -63.5279159545898,
+      "source_id": "retrieved_chunk_1",
+      "snippet": "Typical indicators include top-1 hit rate, top-3 hit rate, mean reciprocal rank, and average retrieval latency."
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "score_or_distance": -62.7543067932129,
+      "source_id": "retrieved_chunk_2",
+      "snippet": "A practical RetrievalQA system should separate retrieval evaluation from generation evaluation. Retrieval evaluation asks whether the database returns the correct or at least useful chunks."
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "score_or_distance": -62.4924659729004,
+      "source_id": "retrieved_chunk_3",
+      "snippet": "The RK3568 platform is a typical resource-constrained edge device."
+    }
+  ],
+  "answer": "RK3568 should focus on retrieval evaluation, specifically assessing the top-1 hit rate, top-3 hit rate, mean reciprocal rank, and average retrieval latency in a production-style Retrieval-Augmented Generation (RAG) system.",
+  "latency_s": 43.6504
+}

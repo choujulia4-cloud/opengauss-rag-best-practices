@@ -1,0 +1,46 @@
+{
+  "config_id": "CFG-11",
+  "query_id": "Q53",
+  "query": "What is the recommended CUDA version for this project?",
+  "gold_type": "unknown",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "hybrid",
+  "rewrite_type_used": "model",
+  "query_rewrite": "Recommended CUDA version for project Recommended CUDA version for project (Note: The rewritten query maintains the",
+  "query_rewrite_raw": "Recommended CUDA version for project Recommended CUDA version for project\n\n(Note: The rewritten query maintains the",
+  "rewrite_changed": true,
+  "rewrite_route_reason": "ambiguous_or_low_confidence_model",
+  "rewrite_is_valid": true,
+  "rewrite_valid_reason": "accepted",
+  "strategy_top_k": 3,
+  "strategy_generation_max_new_tokens": 256,
+  "strategy_answer_style": "concise_grounded",
+  "citations": [
+    {
+      "id": 1,
+      "rank": 1,
+      "score_or_distance": -71.1257476806641,
+      "source_id": "retrieved_chunk_1",
+      "snippet": "When a user submits a question, the system converts the question into an embedding vector and performs similarity search against the stored vectors."
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "score_or_distance": -70.1809921264648,
+      "source_id": "retrieved_chunk_2",
+      "snippet": "Instead of exposing raw Python scripts, the engineer can define a service interface such as ask(query: str) and let BentoML handle model packaging, dependency management, and API serving."
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "score_or_distance": -69.8823928833008,
+      "source_id": "retrieved_chunk_3",
+      "snippet": "Docker makes it possible to package OpenGauss, Python runtime dependencies, and the BentoML service in a reproducible way."
+    }
+  ],
+  "answer": "The context does not provide information regarding the recommended CUDA version for a project. Therefore, the answer is no.",
+  "latency_s": 43.9846
+}

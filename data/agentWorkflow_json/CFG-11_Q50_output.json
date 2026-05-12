@@ -1,0 +1,46 @@
+{
+  "config_id": "CFG-11",
+  "query_id": "Q50",
+  "query": "Which one is better here?",
+  "gold_type": "unknown",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "hybrid",
+  "rewrite_type_used": "none",
+  "query_rewrite": "Which one is better here?",
+  "query_rewrite_raw": "",
+  "rewrite_changed": false,
+  "rewrite_route_reason": "",
+  "rewrite_is_valid": false,
+  "rewrite_valid_reason": "trewrite_too_long",
+  "strategy_top_k": 3,
+  "strategy_generation_max_new_tokens": 256,
+  "strategy_answer_style": "concise_grounded",
+  "citations": [
+    {
+      "id": 1,
+      "rank": 1,
+      "score_or_distance": -58.6952362060547,
+      "source_id": "retrieved_chunk_1",
+      "snippet": "Some should ask for comparisons, such as the difference between HuggingFace embeddings and Cohere embeddings."
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "score_or_distance": -58.1819801330566,
+      "source_id": "retrieved_chunk_2",
+      "snippet": "Typical indicators include top-1 hit rate, top-3 hit rate, mean reciprocal rank, and average retrieval latency."
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "score_or_distance": -57.8102340698242,
+      "source_id": "retrieved_chunk_3",
+      "snippet": "Instead, the report should identify which configurations are recommended under which conditions."
+    }
+  ],
+  "answer": "The context does not provide enough information to determine which configuration is better. It suggests comparing HuggingFace and Cohere embeddings using indicators like top-1 hit rate, top-3 hit rate, mean reciprocal rank, and average retrieval latency, but does not specify which is superior.",
+  "latency_s": 69.8284
+}

@@ -1,0 +1,46 @@
+{
+  "config_id": "CFG-09",
+  "query_id": "Q43",
+  "query": "RK3568 solution?",
+  "gold_type": "deployment_or_recommendation",
+  "predicted_type": "list_or_enumeration",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "hybrid",
+  "rewrite_type_used": "rules",
+  "query_rewrite": "RK3568 solution?",
+  "query_rewrite_raw": "",
+  "rewrite_changed": false,
+  "rewrite_route_reason": "",
+  "rewrite_is_valid": true,
+  "rewrite_valid_reason": "no_rewrite",
+  "strategy_top_k": 5,
+  "strategy_generation_max_new_tokens": 1024,
+  "strategy_answer_style": "bullet_like",
+  "citations": [
+    {
+      "id": 1,
+      "rank": 1,
+      "score_or_distance": -66.5650024414062,
+      "source_id": "retrieved_chunk_1",
+      "snippet": "Finally, the RK3568 deployment target introduces real-world constraints that force the system toward a minimal, stable, and well-justified implementation."
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "score_or_distance": -62.8539733886719,
+      "source_id": "retrieved_chunk_2",
+      "snippet": "The RK3568 platform is a typical resource-constrained edge device."
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "score_or_distance": -59.3365097045898,
+      "source_id": "retrieved_chunk_3",
+      "snippet": "The third is a best-practice report that summarizes experiments, explains trade-offs, and recommends configurations for both standard Linux servers and AArch64 edge devices."
+    }
+  ],
+  "answer": "- RK3568 deployment target introduces real-world constraints\n- RK3568 platform is a typical resource-constrained edge device\n- Best-practice report summarizes experiments, explains trade-offs, and recommends configurations\n- Report should identify recommended configurations under specific conditions\n- Practical RetrievalQA system separates retrieval evaluation from generation evaluation\n- Retrieval evaluation focuses on the database's ability to return correct or useful chunks\n\nImportant items explicitly mentioned:\n- RK3568 deployment target\n- Resource-constrained edge device\n- Best-practice report\n- Configuration recommendations\n- Retrieval evaluation\n- Generation evaluation\n- Database's ability to return correct or useful chunks",
+  "latency_s": 111.5175
+}

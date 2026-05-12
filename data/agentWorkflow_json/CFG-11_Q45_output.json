@@ -1,0 +1,46 @@
+{
+  "config_id": "CFG-11",
+  "query_id": "Q45",
+  "query": "Why should it be moved off the edge device?",
+  "gold_type": "unknown",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "hybrid",
+  "rewrite_type_used": "model",
+  "query_rewrite": "Optimize edge device storage offloading reasons Optimize edge device storage offloading reasons",
+  "query_rewrite_raw": "Optimize edge device storage offloading reasons Optimize edge device storage offloading reasons",
+  "rewrite_changed": true,
+  "rewrite_route_reason": "ambiguous_or_low_confidence_model",
+  "rewrite_is_valid": true,
+  "rewrite_valid_reason": "accepted",
+  "strategy_top_k": 3,
+  "strategy_generation_max_new_tokens": 256,
+  "strategy_answer_style": "concise_grounded",
+  "citations": [
+    {
+      "id": 1,
+      "rank": 1,
+      "score_or_distance": -74.2973709106445,
+      "source_id": "retrieved_chunk_1",
+      "snippet": "The edge device then focuses on online query handling, vector retrieval, and lightweight response assembly. This division of labor reduces memory pressure and improves stability."
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "score_or_distance": -69.3300018310547,
+      "source_id": "retrieved_chunk_2",
+      "snippet": "This reduces local computation pressure and can simplify deployment on lightweight edge devices, but it requires network access and external service credentials."
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "score_or_distance": -68.8014755249023,
+      "source_id": "retrieved_chunk_3",
+      "snippet": "It also matches realistic edge deployment patterns where the edge node provides fast local search while heavy model computation remains centralized."
+    }
+  ],
+  "answer": "The key point is that offloading storage from edge devices to centralized services reduces local computation and memory pressure, improving stability and aligning with deployment patterns where edge nodes handle fast local searches while heavy computations are centralized. This requires network access and external service credentials.",
+  "latency_s": 57.7878
+}

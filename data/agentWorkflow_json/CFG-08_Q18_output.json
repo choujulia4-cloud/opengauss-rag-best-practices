@@ -1,0 +1,46 @@
+{
+  "config_id": "CFG-08",
+  "query_id": "Q18",
+  "query": "What tunable parameters are involved in document chunking, and list common value ranges of them.",
+  "gold_type": "list_or_enumeration",
+  "predicted_type": "list_or_enumeration",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "none",
+  "rewrite_type_used": "none",
+  "query_rewrite": "What tunable parameters are involved in document chunking, and list common value ranges of them.",
+  "query_rewrite_raw": "",
+  "rewrite_changed": false,
+  "rewrite_route_reason": "",
+  "rewrite_is_valid": true,
+  "rewrite_valid_reason": "no_rewrite_baseline",
+  "strategy_top_k": 3,
+  "strategy_generation_max_new_tokens": 256,
+  "strategy_answer_style": "safe_default",
+  "citations": [
+    {
+      "id": 1,
+      "rank": 1,
+      "score_or_distance": -85.7964019775391,
+      "source_id": "retrieved_chunk_1",
+      "snippet": "In practice, chunk size and chunk overlap should be treated as tunable parameters."
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "score_or_distance": -81.1969604492188,
+      "source_id": "retrieved_chunk_2",
+      "snippet": "Chunking strategy determines how information is represented. Embedding models determine how semantics are mapped into vectors. Retrieval settings determine how relevant context is selected."
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "score_or_distance": -80.1778717041016,
+      "source_id": "retrieved_chunk_3",
+      "snippet": "The first dimension is chunking strategy. Fixed-length chunking is simple and easy to reproduce, but sentence-based or punctuation-based chunking may better preserve semantic boundaries."
+    }
+  ],
+  "answer": "The tunable parameters involved in document chunking are chunk size and chunk overlap. While the context does not provide specific common value ranges for these parameters, it suggests that they should be treated as adjustable settings in practice. To determine common value ranges, one would typically need to refer to specific research studies, guidelines, or empirical data related to document chunking in natural language processing (NLP) tasks. Without such information, it is not possible to provide exact value ranges. Based on the given context, we can identify that chunk size and chunk overlap are tunable parameters in document chunking. However, the context does not provide specific common value ranges for these parameters. In practice, these parameters are often adjusted based on the requirements of the specific NLP task, the characteristics of the dataset, and the performance of the chunking strategy.\n\nTo find common value ranges for chunk size and chunk overlap, one would need to consult relevant literature, research papers, or empirical studies in the field of NLP. These sources may provide insights into the typical ranges used for different types of documents, languages, or chunking strategies.\n\nIn summary, while the context highlights the importance of tunable parameters like chunk size and chunk",
+  "latency_s": 166.5943
+}

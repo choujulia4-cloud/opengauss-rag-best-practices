@@ -1,0 +1,46 @@
+{
+  "config_id": "CFG-11",
+  "query_id": "Q41",
+  "query": "OpenGauss role?",
+  "gold_type": "unknown",
+  "predicted_type": "unknown",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "hybrid",
+  "rewrite_type_used": "rules",
+  "query_rewrite": "OpenGauss role?",
+  "query_rewrite_raw": "",
+  "rewrite_changed": false,
+  "rewrite_route_reason": "",
+  "rewrite_is_valid": true,
+  "rewrite_valid_reason": "no_rewrite",
+  "strategy_top_k": 3,
+  "strategy_generation_max_new_tokens": 256,
+  "strategy_answer_style": "safe_default",
+  "citations": [
+    {
+      "id": 1,
+      "rank": 1,
+      "score_or_distance": -67.6024627685547,
+      "source_id": "retrieved_chunk_1",
+      "snippet": "OpenGauss is an enterprise-grade relational database that can also be used as a vector store for retrieval-augmented generation systems."
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "score_or_distance": -61.5397605895996,
+      "source_id": "retrieved_chunk_2",
+      "snippet": "HuggingFace, Cohere, and BentoML each play different roles in the system. OpenGauss provides the persistent vector storage and retrieval backbone."
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "score_or_distance": -59.7569427490234,
+      "source_id": "retrieved_chunk_3",
+      "snippet": "Instead, the report should identify which configurations are recommended under which conditions."
+    }
+  ],
+  "answer": "OpenGauss serves as the enterprise-grade relational database and vector store for retrieval-augmented generation systems in the described context. It provides the persistent vector storage and retrieval backbone, which is crucial for the system's functionality.",
+  "latency_s": 65.3462
+}

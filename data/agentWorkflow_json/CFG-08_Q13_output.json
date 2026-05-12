@@ -1,0 +1,46 @@
+{
+  "config_id": "CFG-08",
+  "query_id": "Q13",
+  "query": "What is the difference between a desktop deployment environment and an RK3568 deployment environment?",
+  "gold_type": "comparison",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "none",
+  "rewrite_type_used": "none",
+  "query_rewrite": "What is the difference between a desktop deployment environment and an RK3568 deployment environment?",
+  "query_rewrite_raw": "",
+  "rewrite_changed": false,
+  "rewrite_route_reason": "",
+  "rewrite_is_valid": true,
+  "rewrite_valid_reason": "no_rewrite_baseline",
+  "strategy_top_k": 3,
+  "strategy_generation_max_new_tokens": 256,
+  "strategy_answer_style": "safe_default",
+  "citations": [
+    {
+      "id": 1,
+      "rank": 1,
+      "score_or_distance": -78.0039825439453,
+      "source_id": "retrieved_chunk_1",
+      "snippet": "On RK3568, the recommended minimal solution may be to deploy OpenGauss and a lightweight service endpoint locally, while performing large-scale embedding generation on a separate machine."
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "score_or_distance": -77.4570846557617,
+      "source_id": "retrieved_chunk_2",
+      "snippet": "Finally, the RK3568 deployment target introduces real-world constraints that force the system toward a minimal, stable, and well-justified implementation."
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "score_or_distance": -75.2866973876953,
+      "source_id": "retrieved_chunk_3",
+      "snippet": "The RK3568 platform is a typical resource-constrained edge device."
+    }
+  ],
+  "answer": "Based on the given context, the difference between a desktop deployment environment and an RK3568 deployment environment lies in the resource constraints and system requirements. Desktop environments typically have more resources and flexibility, allowing for a broader range of applications and services to be deployed directly on the device. In contrast, the RK3568 deployment environment is a resource-constrained edge device, which necessitates a more minimal, stable, and well-justified implementation.\n\nFor the RK3568 platform, it is recommended to deploy OpenGauss and a lightweight service endpoint locally, while performing large-scale embedding generation on a separate machine. This approach acknowledges the limited resources of the RK3568 device and aims to optimize the system's performance and stability by separating resource-intensive tasks from the edge device.\n\nIn summary, the primary differences between a desktop deployment environment and an RK3568 deployment environment are:\n\n1. Resource availability: Desktops generally have more resources (CPU, memory, storage) compared to the resource-constrained RK3568 edge device.\n2. System requirements: Desktop environments can support a",
+  "latency_s": 166.7006
+}

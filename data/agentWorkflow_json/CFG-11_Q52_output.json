@@ -1,0 +1,46 @@
+{
+  "config_id": "CFG-11",
+  "query_id": "Q52",
+  "query": "Why does that matter?",
+  "gold_type": "unknown",
+  "predicted_type": "definition",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "hybrid",
+  "rewrite_type_used": "model",
+  "query_rewrite": "Importance of the matter in question Significance of the issue at hand",
+  "query_rewrite_raw": "Importance of the matter in question Significance of the issue at hand",
+  "rewrite_changed": true,
+  "rewrite_route_reason": "ambiguous_or_low_confidence_model",
+  "rewrite_is_valid": true,
+  "rewrite_valid_reason": "accepted",
+  "strategy_top_k": 3,
+  "strategy_generation_max_new_tokens": 256,
+  "strategy_answer_style": "concise_grounded",
+  "citations": [
+    {
+      "id": 1,
+      "rank": 1,
+      "score_or_distance": -63.893741607666,
+      "source_id": "retrieved_chunk_1",
+      "snippet": "The most relevant chunks are then returned as retrieval context for answer generation."
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "score_or_distance": -63.1174468994141,
+      "source_id": "retrieved_chunk_2",
+      "snippet": "If the knowledge base contains layered information like concepts, procedures, trade-offs, and deployment notes, then it becomes suitable for evaluating both retrieval accuracy and answer generation"
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "score_or_distance": -63.0661506652832,
+      "source_id": "retrieved_chunk_3",
+      "snippet": "Factoid questions, procedural questions, and summary questions may stress the retrieval system in different ways."
+    }
+  ],
+  "answer": "The context highlights the significance of layered information in knowledge bases for evaluating retrieval accuracy and answer generation, particularly for factoid, procedural, and summary questions. This underscores the importance of comprehensive and structured information in effectively addressing various types of queries.",
+  "latency_s": 56.9399
+}

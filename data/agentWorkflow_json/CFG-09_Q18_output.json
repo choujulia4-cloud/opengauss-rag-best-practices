@@ -1,0 +1,46 @@
+{
+  "config_id": "CFG-09",
+  "query_id": "Q18",
+  "query": "What tunable parameters are involved in document chunking, and list common value ranges of them.",
+  "gold_type": "list_or_enumeration",
+  "predicted_type": "list_or_enumeration",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "none",
+  "rewrite_type_used": "none",
+  "query_rewrite": "What tunable parameters are involved in document chunking, and list common value ranges of them.",
+  "query_rewrite_raw": "",
+  "rewrite_changed": false,
+  "rewrite_route_reason": "",
+  "rewrite_is_valid": true,
+  "rewrite_valid_reason": "no_rewrite_baseline",
+  "strategy_top_k": 5,
+  "strategy_generation_max_new_tokens": 1024,
+  "strategy_answer_style": "bullet_like",
+  "citations": [
+    {
+      "id": 1,
+      "rank": 1,
+      "score_or_distance": -85.7964019775391,
+      "source_id": "retrieved_chunk_1",
+      "snippet": "In practice, chunk size and chunk overlap should be treated as tunable parameters."
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "score_or_distance": -81.1969604492188,
+      "source_id": "retrieved_chunk_2",
+      "snippet": "Chunking strategy determines how information is represented. Embedding models determine how semantics are mapped into vectors. Retrieval settings determine how relevant context is selected."
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "score_or_distance": -80.1778717041016,
+      "source_id": "retrieved_chunk_3",
+      "snippet": "The first dimension is chunking strategy. Fixed-length chunking is simple and easy to reproduce, but sentence-based or punctuation-based chunking may better preserve semantic boundaries."
+    }
+  ],
+  "answer": "- Chunk size: Tunable parameter with no specified common value range provided in the context.\n- Chunk overlap size: Tunable parameter with no specified common value range provided in the context.\n- Embedding model name: Not a tunable parameter, but a specific choice for representing semantics.\n- Document identifier: Not a tunable parameter, but a unique identifier for documents.\n- Source file name: Not a tunable parameter, but identifies the origin of the document.\n- Fixed-length chunking vs. sentence-based/punctuation-based chunking: Not explicitly listed as tunable parameters, but represents different strategies for chunking.\n\nNote: The context does not provide specific common value ranges for chunk size and chunk overlap size, hence no such ranges can be listed.",
+  "latency_s": 120.7515
+}

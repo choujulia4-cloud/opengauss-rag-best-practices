@@ -1,0 +1,46 @@
+{
+  "config_id": "CFG-11",
+  "query_id": "Q46",
+  "query": "How does this help deployment?",
+  "gold_type": "unknown",
+  "predicted_type": "deployment_or_recommendation",
+  "predicted_type_raw": "",
+  "classify_type": "hybrid",
+  "actual_classify_type": "rules",
+  "rewrite_type_requested": "hybrid",
+  "rewrite_type_used": "model",
+  "query_rewrite": "Optimize deployment process benefits Optimize deployment process benefits",
+  "query_rewrite_raw": "Optimize deployment process benefits Optimize deployment process benefits",
+  "rewrite_changed": true,
+  "rewrite_route_reason": "ambiguous_or_low_confidence_model",
+  "rewrite_is_valid": true,
+  "rewrite_valid_reason": "accepted",
+  "strategy_top_k": 5,
+  "strategy_generation_max_new_tokens": 2048,
+  "strategy_answer_style": "decision_reasoning",
+  "citations": [
+    {
+      "id": 1,
+      "rank": 1,
+      "score_or_distance": -71.9614028930664,
+      "source_id": "retrieved_chunk_1",
+      "snippet": "Finally, the RK3568 deployment target introduces real-world constraints that force the system toward a minimal, stable, and well-justified implementation."
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "score_or_distance": -71.7553787231445,
+      "source_id": "retrieved_chunk_2",
+      "snippet": "A practical RetrievalQA system should separate retrieval evaluation from generation evaluation. Retrieval evaluation asks whether the database returns the correct or at least useful chunks."
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "score_or_distance": -70.9044799804688,
+      "source_id": "retrieved_chunk_3",
+      "snippet": "Therefore, the final deployment plan should distinguish between what is validated in a development environment and what is realistic on the target board."
+    }
+  ],
+  "answer": "Reduce local computation pressure and simplify deployment on lightweight edge devices.\n\nExplanation: The context mentions that separating retrieval evaluation from generation evaluation and distinguishing between what is validated in a development environment and what is realistic on the target board can reduce local computation pressure. This implies that by optimizing the deployment process in this way, the system can be simplified for deployment on lightweight edge devices. However, it's important to note that this optimization requires network access and external service credentials.",
+  "latency_s": 86.6292
+}
